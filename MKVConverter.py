@@ -1,3 +1,7 @@
+############
+# V0.00.02 #
+############
+
 import os
 import subprocess
 
@@ -33,9 +37,10 @@ def batch_mux_mp4_srt(directory):
                 print(f"Error processing {video}: {e}")
         else:
             print(f"No subtitle found for {video}, skipping...")
+    print("\a")
+    input("Press Enter to close window...")
 
 if __name__ == "__main__":
     # Update this path to your folder containing the files
-    #target_dir = r'H:\TV Shows\fist-of-the-north-star-1984\Fist of the North Star (1984)\Season 1'
     target_dir = input("Input target directory: ")
     batch_mux_mp4_srt(target_dir)
