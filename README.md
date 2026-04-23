@@ -6,4 +6,3 @@ To run this script, ffmpeg is required. This can be installed on Windows from co
 ```
 winget install ffmpeg
 ```
-Python3 is also required.
